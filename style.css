@@ -1,0 +1,123 @@
+.background_blue {
+  background-color: #0D1C53;
+  /* height: 756px; */
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.paraEl1 {
+  padding-bottom: 60px;  
+}
+.paraEl2 {
+  padding-bottom: 17px;
+}
+.paraEl3 {
+  padding-bottom: 30px;
+}
+.testimonial_header {
+  text-align: center;
+  font-size: 90px;
+  color: gold;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+
+.margin_bottom_gone {
+  margin-bottom: -10px;
+}
+
+.testimonial {
+   color: white;
+   max-width: 24%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   /* overflow: hidden; */
+}
+.iamhidden {
+  height: 200px;
+}
+img {
+  width: 100px; 
+  height: 100px;
+  border-radius: 10px;
+}
+.image {  
+  margin-top: -1%;
+  margin-left: 8%;
+}
+.image1 {
+  margin-top: -1%;
+  margin-left: 8%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  background-color: #722876;
+  border-radius: 20px;
+  height: 90px;
+  width: 400px;
+  gap: 10px;
+}
+
+.occupation {
+  font-size: 12px;
+}
+
+.paraEl {
+    font-size: 18px;
+}
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #9FD0D8;
+}
+
+.container p {
+  position: relative; /* Relative positioning for the paragraphs */
+}
+
+.container .paraEl::after {
+  content: ''; /* Generating the line */
+  position: absolute; /* Absolute positioning for the lines */
+  top: 0%;
+  right: 0%;
+  left: 130%;
+  height: 250px;
+  width: 1px; 
+  background-color: whitesmoke; /* Line color */
+  transform: translateY(-50%, -50%); /* Move the line to the middle of the paragraph */
+}
+
+/* global */
+.m-w-80 {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+} 
+
+
+/* media queries */
+@media screen and (max-width: 1400px) {
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+    .container .paraEl::after {
+      display: none;
+    }
+}
